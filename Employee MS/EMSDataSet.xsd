@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EMSDataSet" targetNamespace="http://tempuri.org/EMSDataSet.xsd" xmlns:mstns="http://tempuri.org/EMSDataSet.xsd" xmlns="http://tempuri.org/EMSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Employee_MS.Properties.Settings.GlobalReference.Default.EMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EMSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EMSDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EMSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_UserTableName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_UserColumnName="EmpName" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpID" msprop:Generator_ColumnPropNameInRow="EmpID" msprop:Generator_ColumnPropNameInTable="EmpIDColumn" msprop:Generator_ColumnVarNameInTable="columnEmpID" msprop:Generator_UserColumnName="EmpID" type="xs:string" />
+              <xs:element name="EmpAdd" msprop:Generator_ColumnPropNameInRow="EmpAdd" msprop:Generator_ColumnPropNameInTable="EmpAddColumn" msprop:Generator_ColumnVarNameInTable="columnEmpAdd" msprop:Generator_UserColumnName="EmpAdd" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpPos" msprop:Generator_ColumnPropNameInRow="EmpPos" msprop:Generator_ColumnPropNameInTable="EmpPosColumn" msprop:Generator_ColumnVarNameInTable="columnEmpPos" msprop:Generator_UserColumnName="EmpPos" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpDob" msprop:Generator_ColumnPropNameInRow="EmpDob" msprop:Generator_ColumnPropNameInTable="EmpDobColumn" msprop:Generator_ColumnVarNameInTable="columnEmpDob" msprop:Generator_UserColumnName="EmpDob" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpPhone" msprop:Generator_ColumnPropNameInRow="EmpPhone" msprop:Generator_ColumnPropNameInTable="EmpPhoneColumn" msprop:Generator_ColumnVarNameInTable="columnEmpPhone" msprop:Generator_UserColumnName="EmpPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpGen" msprop:Generator_ColumnPropNameInRow="EmpGen" msprop:Generator_ColumnPropNameInTable="EmpGenColumn" msprop:Generator_ColumnVarNameInTable="columnEmpGen" msprop:Generator_UserColumnName="EmpGen" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DataTable1Key1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:EmpID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
